@@ -1,8 +1,13 @@
 <hml>
 <body>
-test
+<input type="checkbox" class="check">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script>
-alert('111');
+$('.check').change(function(){
+  if($(this).is(':checked')) {
+    alert('Checked');
+  }
+})
 </script>
 </body>
 </html>
